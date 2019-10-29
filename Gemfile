@@ -6,6 +6,7 @@ ruby '2.6.3'
 gem 'devise'
 gem 'activeadmin'
 gem 'image_processing', '~> 1.2'
+gem 'groupdate'
 group :production do
   gem "aws-sdk-s3", require: false
   end
