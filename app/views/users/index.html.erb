@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Habilitaciones</h1>
-
+<h1 class="login-header">Habilitaciones</h1>
+<div class="login-container">
 <table>
   <thead>
     <tr>
@@ -12,7 +12,7 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.name %></td>
+        <td><%= user.email %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -20,7 +20,7 @@
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
 
 <%= link_to 'Añadir habilitaciòn', new_user_path %>

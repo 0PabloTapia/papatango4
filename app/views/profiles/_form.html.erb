@@ -15,7 +15,6 @@
  <%= form.label :image %>
  <%= form.file_field :image, multiple: true %>
 </div>
-<%= link_to 'Remove', delete_image_profile_path(@post, @image), method: :delete, data: { confirm: 'Are you sure?' } %>
 
   <div class="field">
     <%= form.label :title %>
